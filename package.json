@@ -7,9 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client-side": "npm start --prefix client-side",
-    "start": "npm run dev",
-    "dev": "concurrently \"npm run  server\" \"npm run client-side\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client-side && npm run build --prefix client-side && npm run"
+    "start": "NPM_CONFIG_PRODUCTION=false npm install --prefix client-side && npm run build --prefix client-side && npm run",
+    "dev": "concurrently \"npm run  server\" \"npm run client-side\""
   },
   "author": "",
   "license": "ISC",
