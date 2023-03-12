@@ -11,7 +11,7 @@ import Animations from '../../utils/Animation';
 import './ContactMe.css';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000', // your frontend URL
+  baseURL: 'http://localhost:8000', // your frontend URL
   proxy: {
     host: 'localhost',
     port: 8000, // your backend port
